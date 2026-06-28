@@ -5,9 +5,9 @@ application:
     image: leantime/leantime:latest
     path: /
     servicePorts:
-    - 80
+    - 8080
     vars:
-      LEAN_DB_HOST: mysql.pod
+      LEAN_DB_HOST: leantime-mysql-service
       LEAN_DB_USER: leantime
       LEAN_DB_PASSWORD: leantime
       LEAN_DB_DATABASE: leantime
